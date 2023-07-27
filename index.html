@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/index.css">
+  <title>Free Number Table Concentratipn Grid Game</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="title">Click the numbers in order, starting with ZERO.<br>The timer will be started as soon as you click the
+      Start button.
+    </h1>
+    <div id="numberInputDiv">
+      <div class="row">
+        <label for="chooseRow">How Many Rows?</label>
+        <select name="" id="selectRow">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="chooseCol">How many Cols?</label>
+        <select name="" id="selectCol">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+    </div>
+    <div class="btn-div">
+      <button id="startBtn">Start!</button>
+      <button id="stopBtn" class="stopBtn">Finish!</button>
+    </div>
+    <div id="table">
+
+    </div>
+
+  </div>
+  <div class="message-container">
+    <div id="message-div">
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="./script/app.js"></script>
+</body>
+
+</html>
