@@ -79,8 +79,9 @@ const generateDivs = () => {
   console.log(eventlastIndex)
   eventFirstIndex.addEventListener('click', myChoronometer.start())
   eventlastIndex.addEventListener('click',()=>{
+        myChoronometer.stop()
     showResult.style.visibility = 'visible'
-    myChoronometer.stop()
+
   })
 }
 
