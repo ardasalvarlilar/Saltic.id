@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: auto;
+
+  #container{
+    width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    #title{
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    #numberInputDiv{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .btn-div{
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #startBtn{
+        padding: 7px 12px;
+        border-radius: 8px;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+      .stopBtn{
+        padding: 7px 12px;
+        border-radius: 8px; 
+        border: 1px solid #000;
+        cursor: pointer;
+        display: none;
+      }
+    }
+  
+    #table{
+      width: fit-content;
+      margin: auto;
+      box-sizing: border-box;
+  
+      .number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+
+  .message-container{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    background-color: #4A55A2;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    #message-div{
+      width: 90%;
+      background-color: #7895CB;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      #message{
+        text-align: center;
+        font-size: 3rem;
+        color: #C5DFF8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #title{
+    font-size: 1rem;
+  }
+  .message-container{
+
+  #message-div{
+
+    #message{
+      font-size: 1.2rem;
+    }
+  }
+  }
+}
